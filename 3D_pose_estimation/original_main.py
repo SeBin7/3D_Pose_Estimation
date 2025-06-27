@@ -369,7 +369,7 @@ if not Path("face-demographics-walking.mp4").exists():
     download_file(
         "https://storage.openvinotoolkit.org/data/test_data/videos/face-demographics-walking.mp4",
     )
-video_path = "6454284-uhd_2160_3840_24fps.mp4"
+video_path = "face-demographics-walking.mp4"
 
 source = cam_id if USE_WEBCAM else video_path
 
