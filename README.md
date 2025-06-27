@@ -34,9 +34,9 @@
 PostureCorrector/
 ├── posture_corrector/
 │   ├── __init__.py
-│   ├── pose_model.py          # OpenVINO 모델 로딩 및 추론
-│   ├── posture_analyzer.py   # 자세 판단 + EMA + 타이머 관리
-│   └── visualizer.py         # 화면 출력 및 FPS 표시
+│   ├── pose_model.py         # OpenVINO 모델 로딩 및 추론
+│   ├── posture_analyzer.py   # 자세 판단
+│   └── visualizer.py         # 화면 출력
 │
 ├── main.py                   # 실행 스크립트
 ├── README.md
@@ -49,7 +49,7 @@ PostureCorrector/
 
 | 자세 유형 | 판단 지표 | 기준값 (EMA) |
 |-----------|-----------|----------------|
-| 허리 구부정 | 목–엉덩이 각도 | > 35도 |
+| 허리 구부정 | 목–엉덩이 각도 | > 20도 |
 | 거북목 | 목과 코의 z축 차이 | > 0.03 |
 | 라운드 숄더 | 어깨–엉덩이 z축 차이 | > 0.02 |
 
