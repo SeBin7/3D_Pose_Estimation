@@ -1,0 +1,5 @@
+*.venv
+*venv
+__pycache__
+
+3D_main.py
